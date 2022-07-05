@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>fileSettingsDialog</class>
+    <widget class="QDialog" name="fileSettingsDialog">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>623</width>
+                <height>289</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>File Parse Settings</string>
+        </property>
+        <widget class="QDialogButtonBox" name="buttonBox">
+            <property name="geometry">
+                <rect>
+                    <x>30</x>
+                    <y>240</y>
+                    <width>551</width>
+                    <height>32</height>
+                </rect>
+            </property>
+            <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="standardButtons">
+                <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+            </property>
+        </widget>
+        <widget class="QGroupBox" name="grpColIndices">
+            <property name="geometry">
+                <rect>
+                    <x>340</x>
+                    <y>20</y>
+                    <width>250</width>
+                    <height>220</height>
+                </rect>
+            </property>
+            <property name="title">
+                <string>Column Indices</string>
+            </property>
+            <widget class="QWidget" name="formLayoutWidget_2">
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>20</y>
+                        <width>241</width>
+                        <height>191</height>
+                    </rect>
+                </property>
+                <layout class="QFormLayout" name="frmColIndices">
+                    <item row="0" column="0">
+                        <widget class="QLabel" name="lblDateCol">
+                            <property name="text">
+                                <string>Date</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item row="0" column="1">
+                        <widget class="QComboBox" name="cmbDateCol"/>
+                    </item>
+                    <item row="1" column="0">
+                        <widget class="QLabel" name="lblNarrCol">
+                            <property name="text">
+                                <string>Narr</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item row="1" column="1">
+                        <widget class="QComboBox" name="cmbNarrCol"/>
+                    </item>
+                    <item row="2" column="1">
+                        <widget class="QComboBox" name="cmbDebitCol"/>
+                    </item>
+                    <item row="2" column="0">
+                        <widget class="QLabel" name="lblDebitCol">
+                            <property name="text">
+                                <string>Debit</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item row="3" column="0">
+                        <widget class="QLabel" name="lblCreditCol">
+                            <property name="text">
+                                <string>Credit</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item row="3" column="1">
+                        <widget class="QComboBox" name="cmbCreditCol"/>
+                    </item>
+                    <item row="4" column="0">
+                        <widget class="QLabel" name="lblBalanceCol">
+                            <property name="text">
+                                <string>Balance</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item row="4" column="1">
+                        <widget class="QComboBox" name="cmbBalanceCol"/>
+                    </item>
+                </layout>
+            </widget>
+        </widget>
+        <widget class="QGroupBox" name="grpMain">
+            <property name="geometry">
+                <rect>
+                    <x>30</x>
+                    <y>20</y>
+                    <width>250</width>
+                    <height>220</height>
+                </rect>
+            </property>
+            <property name="title">
+                <string>Parse Settings</string>
+            </property>
+            <widget class="QWidget" name="formLayoutWidget">
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>20</y>
+                        <width>241</width>
+                        <height>191</height>
+                    </rect>
+                </property>
+                <layout class="QFormLayout" name="frmParseSettings">
+                    <item row="0" column="0">
+                        <widget class="QLabel" name="lblDelim">
+                            <property name="text">
+                                <string>Delimiter</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item row="0" column="1">
+                        <widget class="QComboBox" name="cmbDelim"/>
+                    </item>
+                    <item row="1" column="0">
+                        <widget class="QLabel" name="lblNumCols">
+                            <property name="text">
+                                <string>No. of cols</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item row="1" column="1">
+                        <widget class="QSpinBox" name="txtNumCols">
+                            <property name="minimum">
+                                <number>4</number>
+                            </property>
+                        </widget>
+                    </item>
+                    <item row="2" column="0">
+                        <widget class="QLabel" name="lblFirstRow">
+                            <property name="text">
+                                <string>First Row</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item row="2" column="1">
+                        <widget class="QSpinBox" name="txtFirstRow">
+                            <property name="minimum">
+                                <number>1</number>
+                            </property>
+                        </widget>
+                    </item>
+                    <item row="3" column="0">
+                        <widget class="QLabel" name="lblDateFormat">
+                            <property name="text">
+                                <string>Date format</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item row="3" column="1">
+                        <widget class="QComboBox" name="cmbDateFmt"/>
+                    </item>
+                    <item row="4" column="1">
+                        <widget class="QCheckBox" name="chkSingleAmountCol">
+                            <property name="text">
+                                <string/>
+                            </property>
+                        </widget>
+                    </item>
+                    <item row="4" column="0">
+                        <widget class="QLabel" name="lblSingleAmountCol">
+                            <property name="text">
+                                <string>Single Amount Col</string>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+        </widget>
+    </widget>
+    <resources/>
+    <connections>
+        <connection>
+            <sender>buttonBox</sender>
+            <signal>accepted()</signal>
+            <receiver>fileSettingsDialog</receiver>
+            <slot>accept()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>248</x>
+                    <y>254</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>157</x>
+                    <y>274</y>
+                </hint>
+            </hints>
+        </connection>
+        <connection>
+            <sender>buttonBox</sender>
+            <signal>rejected()</signal>
+            <receiver>fileSettingsDialog</receiver>
+            <slot>reject()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>316</x>
+                    <y>260</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>286</x>
+                    <y>274</y>
+                </hint>
+            </hints>
+        </connection>
+    </connections>
+</ui>

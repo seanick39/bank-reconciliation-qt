@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="appicon.png">ui/bank-statement.png</file>
+    </qresource>
+</RCC>
