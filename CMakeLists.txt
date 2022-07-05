@@ -29,7 +29,7 @@ find_package(Qt6 COMPONENTS
 
 add_subdirectory(bank-reconc-lib)
 
-set(INCLUDE_DIRECTORIES ${Qt6Widgets_INCLUDE_DIRS} bank-reconc-lib)
+set(INCLUDE_DIRECTORIES ${Qt6Widgets_INCLUDE_DIRS} bank-reconc-lib include)
 
 include_directories(${INCLUDE_DIRECTORIES})
 
@@ -41,15 +41,15 @@ add_executable(BankReconcTool
 
         br-res.qrc
 
-        BR_MainWindow.cpp BR_MainWindow.h
+        src/BR_MainWindow.cpp include/BR_MainWindow.h
         main.cpp
-        MissingEntryModel.cpp MissingEntryModel.h
-        EntryMatchModel.cpp EntryMatchModel.h
-        helpers.h helpers.cpp
-        FileSettingsDialog.cpp FileSettingsDialog.h
-        mainwindow-tbl-selection.cpp
-        EntryDataModel.cpp EntryDataModel.h 
-		AboutDialog.h)
+        src/MissingEntryModel.cpp include/MissingEntryModel.h
+        src/EntryMatchModel.cpp include/EntryMatchModel.h
+        include/helpers.h src/helpers.cpp
+        src/FileSettingsDialog.cpp include/FileSettingsDialog.h
+        src/mainwindow-tbl-selection.cpp
+        src/EntryDataModel.cpp include/EntryDataModel.h 
+		include/AboutDialog.h)
 
 message("project version: ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}")
 
