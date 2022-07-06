@@ -48,8 +48,8 @@ add_executable(BankReconcTool
         include/helpers.h src/helpers.cpp
         src/FileSettingsDialog.cpp include/FileSettingsDialog.h
         src/mainwindow-tbl-selection.cpp
-        src/EntryDataModel.cpp include/EntryDataModel.h 
-		include/AboutDialog.h)
+        src/EntryDataModel.cpp include/EntryDataModel.h
+        include/AboutDialog.h)
 
 message("project version: ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}")
 
